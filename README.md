@@ -1,4 +1,5 @@
 # 🧮 Calculator Web Application
+### [Live Link](https://codingmation.github.io/SCT_WD_02/)
 
 This is a responsive and interactive **calculator web app** built using **HTML**, **Tailwind CSS**, and **JavaScript**.  
 It supports basic arithmetic operations and a history feature.  
