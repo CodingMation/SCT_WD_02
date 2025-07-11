@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-gradient-to-bl from-[#3a4452] to-[#0a0a0a] h-screen flex items-center justify-center"
+  >
+    <button id="menuBtn" class="absolute top-4 right-4 text-3xl text-white">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div
+      id="menuPanel"
+      class="hidden absolute top-16 right-4 bg-gray-800 text-white p-4 rounded-xl shadow-lg w-48 space-y-2"
+    >
+      <button id="clearHistory" class="w-full bg-gray-600 px-2 py-1 rounded">
+        <i class="fas fa-trash"></i> Clear History
+      </button>
+      <div>
+        <h3 class="font-semibold">History</h3>
+        <ul
+          id="historyList"
+          class="max-h-32 overflow-y-auto text-sm space-y-1"
+        ></ul>
+      </div>
+    </div>
+
+    <div
+      class="custom-shadow flex flex-col justify-between md:w-[450px] h-[580px] border border-[grey] rounded-xl pt-4 px-4 pb-2 space-y-4"
+    >
+      <div class="h-[20%]">
+        <input
+          type="text"
+          value="0"
+          class="bg-[transparent] outline-none w-full h-full px-2 text-5xl font-semibold text-white text-right border border-[gray] rounded-md"
+          readonly
+        />
+      </div>
+      <div
+        class="buttons h-[80%] bg-[transparent] py-2 grid grid-cols-4 grid-rows-5 gap-4 items-center justify-center"
+      >
+        <!-- Grid Items By JS -->
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+  <script src="./menu.js"></script>
+</html>
